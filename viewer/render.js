@@ -1111,6 +1111,17 @@ export class Renderer {
     ctx.fillText(':', VIEW_W / 2, 400);
     ctx.font = `600 20px ${BODY}`;
     ctx.fillText(`ничьих: ${T.draws}`, VIEW_W / 2, 470);
+    // Technical health: missed turns mean the result is not purely about tactics.
+    (T.health || []).forEach((h, i) => {
+      if (!h.missed && !h.frozen) return;
+      ctx.save();
+      ctx.font = `600 18px ${BODY}`;
+      ctx.fillStyle = '#ff6b7a';
+      ctx.textAlign = i === 0 ? 'right' : 'left';
+      const text = h.frozen ? `бот отключён: не отвечал 3 с` : `пропущено ходов: ${h.missed}`;
+      ctx.fillText(text, i === 0 ? VIEW_W / 2 - 80 : VIEW_W / 2 + 80, 244);
+      ctx.restore();
+    });
     // share bar
     const done = Math.max(1, T.done);
     const bw = 1200;

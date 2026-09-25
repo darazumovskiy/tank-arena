@@ -306,6 +306,7 @@ async function runTournament(token, n) {
       T.byMap[plan.mapIndex].wins[winnerCi]++;
     }
     T.done++;
+    T.health = contestants.map((c) => ({ missed: c.host.missed, frozen: c.host.frozen }));
   }
   T.finished = true;
   sfx.play('win');

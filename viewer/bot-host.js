@@ -1,6 +1,11 @@
 // Main-thread side of a bot worker: request/response with timeouts.
 export const TICK_TIMEOUT_MS = 50;
-const FREEZE_AFTER = 90; // consecutive missed ticks (~3 s) -> the bot is considered hung
+// A bot is considered hung only after this much real time without any answer.
+// Counting missed ticks instead would freeze a bot after one slow tick in the
+// unpaced tournament mode, where ticks follow each other without waiting.
+const FREEZE_MS = 3000;
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export class BotHost {
   constructor(entry) {
@@ -9,11 +14,13 @@ export class BotHost {
     this.pending = new Map();
     this.seq = 0;
     this.busy = false;
+    this.busySince = 0;
+    this.idle = Promise.resolve();
+    this.markIdle = null;
     this.last = null;
     this.frozen = false;
     this.errors = 0;
     this.missed = 0;
-    this.missedInRow = 0;
     this.lastError = '';
   }
 
@@ -47,6 +54,15 @@ export class BotHost {
     });
   }
 
+  // Send work that occupies the worker; `busy` stays set until it answers,
+  // even if we stopped waiting for the answer.
+  work(msg, timeout) {
+    this.busy = true;
+    this.busySince = performance.now();
+    this.idle = new Promise((r) => (this.markIdle = r));
+    return this.request(msg, timeout);
+  }
+
   onMessage(m) {
     if (m.type === 'error') {
       this.errors++;
@@ -54,7 +70,10 @@ export class BotHost {
       if (this.errors <= 3) console.warn(`[${this.entry.id}] ${m.where}:`, m.error);
       return;
     }
-    if (m.type === 'action' || m.type === 'ok') this.busy = false;
+    if (m.type === 'action' || m.type === 'ok') {
+      this.busy = false;
+      this.markIdle?.();
+    }
     const cb = this.pending.get(m.id);
     if (cb) {
       this.pending.delete(m.id);
@@ -64,32 +83,36 @@ export class BotHost {
 
   async init(info) {
     if (this.frozen) return;
-    this.busy = true;
-    await this.request({ type: 'init', info }, 2000);
+    if (this.busy) await Promise.race([this.idle, sleep(2000)]);
+    if (this.busy) return this.checkFrozen();
+    await this.work({ type: 'init', info }, 2000);
   }
 
   async tick(view) {
     if (this.frozen) return null;
-    // A slow bot is still thinking about an older tick: do not queue more work.
-    if (this.busy) return this.miss();
-    this.busy = true;
-    const r = await this.request({ type: 'tick', view }, TICK_TIMEOUT_MS);
-    if (r === undefined) return this.miss();
-    this.missedInRow = 0;
+    // Still thinking about an older tick: give it the same time budget to finish
+    // before skipping this turn, so one slow tick costs one turn, not a streak.
+    if (this.busy) await Promise.race([this.idle, sleep(TICK_TIMEOUT_MS)]);
+    if (this.busy) {
+      this.missed++;
+      this.checkFrozen();
+      return this.frozen ? null : this.last;
+    }
+    const r = await this.work({ type: 'tick', view }, TICK_TIMEOUT_MS);
+    if (r === undefined) {
+      this.missed++;
+      return this.last;
+    }
     this.last = r.action;
     return r.action;
   }
 
-  miss() {
-    this.missed++;
-    this.missedInRow++;
-    if (this.missedInRow >= FREEZE_AFTER) {
+  checkFrozen() {
+    if (this.busy && performance.now() - this.busySince > FREEZE_MS) {
       this.frozen = true;
-      this.lastError = 'бот завис и отключён';
+      this.lastError = 'бот не отвечал 3 с и отключён';
       this.worker.terminate();
-      return null;
     }
-    return this.last;
   }
 
   dispose() {
