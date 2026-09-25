@@ -1155,7 +1155,8 @@ export class Renderer {
     const ctx = this.ctx;
     ctx.save();
     ctx.globalAlpha = 0.35;
-    ctx.drawImage(this.floorFor(Math.floor(this.time / 6) % MAPS.length), OX, OY);
+    const n = MAPS.length;
+    ctx.drawImage(this.floorFor(((Math.floor(this.time / 6) % n) + n) % n), OX, OY);
     ctx.globalAlpha = 1;
     ctx.textAlign = 'center';
     ctx.font = `110px ${HEAD}`;

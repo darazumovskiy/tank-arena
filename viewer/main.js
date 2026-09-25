@@ -316,13 +316,27 @@ async function runTournament(token, n) {
 
 let last = performance.now();
 function loop(now) {
-  const dt = Math.min(0.25, (now - last) / 1000);
+  // The first rAF timestamp can precede `last`, so clamp dt at zero.
+  const dt = Math.max(0, Math.min(0.25, (now - last) / 1000));
   last = now;
-  R.frame(now, dt, ui);
-  if (ui.debug && contestants) {
-    R.drawDebug(contestants.map((c) => `${c.name} (${c.id}): ошибок ${c.host?.errors ?? 0}, пропусков ${c.host?.missed ?? 0}${c.host?.frozen ? ', ЗАВИС' : ''}${c.host?.lastError ? ' — ' + String(c.host.lastError).split('\n')[0].slice(0, 120) : ''}`));
-  }
+  // One bad frame must not kill the loop: show the error instead of a black screen.
   requestAnimationFrame(loop);
+  try {
+    R.frame(now, dt, ui);
+    if (ui.debug && contestants) {
+      R.drawDebug(contestants.map((c) => `${c.name} (${c.id}): ошибок ${c.host?.errors ?? 0}, пропусков ${c.host?.missed ?? 0}${c.host?.frozen ? ', ЗАВИС' : ''}${c.host?.lastError ? ' — ' + String(c.host.lastError).split('\n')[0].slice(0, 120) : ''}`));
+    }
+  } catch (err) {
+    if (!loop.reported) console.error(err);
+    loop.reported = true;
+    const ctx = R.ctx;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = '#400';
+    ctx.fillRect(0, 0, ctx.canvas.width, 150);
+    ctx.fillStyle = '#fff';
+    ctx.font = '16px monospace';
+    String(err?.stack || err).split('\n').slice(0, 6).forEach((l, i) => ctx.fillText(l.slice(0, 160), 16, 30 + i * 20));
+  }
 }
 requestAnimationFrame(loop);
 
