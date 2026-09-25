@@ -1,0 +1,11 @@
+{
+  "name": "tank-arena",
+  "private": true,
+  "type": "module",
+  "description": "Турнир танковых ботов, написанных нейросетями",
+  "scripts": {
+    "start": "node serve.mjs",
+    "sandbox": "node kit/arena/cli.mjs kit/arena/sparring/hunter --vs dummy"
+  },
+  "engines": { "node": ">=18" }
+}
