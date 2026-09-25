@@ -1,0 +1,37 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Turret: rotating gun platform -->
+  <defs>
+    <radialGradient id="turretGradient" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </radialGradient>
+    <filter id="shadow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow2)">
+    <!-- Turret ring base (smaller than body, centered at 32,32) -->
+    <circle cx="32" cy="32" r="18" fill="url(#turretGradient)" stroke="#1e40af" stroke-width="1.5"/>
+
+    <!-- Gun barrel: straight extension to the right, tapered -->
+    <g stroke-linecap="round">
+      <!-- Outer barrel -->
+      <line x1="32" y1="30" x2="52" y2="30" stroke="#2563eb" stroke-width="3"/>
+      <line x1="32" y1="34" x2="52" y2="34" stroke="#2563eb" stroke-width="3"/>
+      <polygon points="52,30 58,32 52,34" fill="#2563eb"/>
+
+      <!-- Inner glow/muzzle -->
+      <circle cx="53" cy="32" r="2" fill="#fbbf24" opacity="0.7"/>
+    </g>
+
+    <!-- Sight or detail on turret top -->
+    <circle cx="32" cy="32" r="3" fill="#fbbf24" opacity="0.6"/>
+
+    <!-- Rim/edge definition -->
+    <circle cx="32" cy="32" r="18" fill="none" stroke="#0f2050" stroke-width="0.5" opacity="0.8"/>
+
+    <!-- Highlight -->
+    <ellipse cx="28" cy="26" rx="5" ry="3" fill="white" opacity="0.15"/>
+  </g>
+</svg>

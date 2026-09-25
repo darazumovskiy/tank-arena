@@ -1,0 +1,346 @@
+[
+  {
+    "name": "control",
+    "w": 18,
+    "l": 22,
+    "d": 0,
+    "score": 1.9439999999999997,
+    "self": 84,
+    "damage": 5107,
+    "taken": 5934,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 5,
+        "l": 3,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 5,
+        "l": 3,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "fast-turn",
+    "w": 21,
+    "l": 19,
+    "d": 0,
+    "score": 4.2,
+    "self": 84,
+    "damage": 5068,
+    "taken": 5576,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 5,
+        "l": 3,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "fast-linear",
+    "w": 20,
+    "l": 20,
+    "d": 0,
+    "score": 2.8773333333333344,
+    "self": 112,
+    "damage": 4971,
+    "taken": 5446,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 5,
+        "l": 3,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 7,
+        "l": 1,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "anticipate-12",
+    "w": 28,
+    "l": 10,
+    "d": 2,
+    "score": 10.09,
+    "self": 28,
+    "damage": 6088,
+    "taken": 5211,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 4,
+        "l": 2,
+        "d": 2
+      }
+    ]
+  },
+  {
+    "name": "anticipate-30",
+    "w": 26,
+    "l": 13,
+    "d": 1,
+    "score": 6.785333333333333,
+    "self": 56,
+    "damage": 5735,
+    "taken": 5218,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 5,
+        "l": 2,
+        "d": 1
+      },
+      {
+        "foe": "gunner",
+        "w": 5,
+        "l": 3,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 5,
+        "l": 3,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "anticipate-fast",
+    "w": 28,
+    "l": 10,
+    "d": 2,
+    "score": 10.423333333333334,
+    "self": 0,
+    "damage": 5904,
+    "taken": 5463,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 4,
+        "l": 2,
+        "d": 2
+      }
+    ]
+  },
+  {
+    "name": "gunner",
+    "w": 19,
+    "l": 21,
+    "d": 0,
+    "score": 3.388,
+    "self": 99,
+    "damage": 5234,
+    "taken": 5260,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 7,
+        "l": 1,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "gunner-anticipate",
+    "w": 27,
+    "l": 13,
+    "d": 0,
+    "score": 5.204000000000001,
+    "self": 66,
+    "damage": 5291,
+    "taken": 5248,
+    "zone": 38,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 7,
+        "l": 1,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      }
+    ]
+  }
+]

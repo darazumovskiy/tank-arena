@@ -1,0 +1,984 @@
+[
+  {
+    "config": [
+      2,
+      1,
+      2,
+      5
+    ],
+    "wins": 44,
+    "losses": 4,
+    "draws": 0,
+    "score": 27.450000000000003,
+    "damage": 7252,
+    "taken": 4214,
+    "self": 28,
+    "zone": 0,
+    "kits": 27,
+    "calls": 38753,
+    "ms": 13614.56619999997,
+    "maxMs": 62.8755000000001,
+    "matches": [
+      {
+        "opponent": "hunter",
+        "w": 8,
+        "l": 0,
+        "d": 0,
+        "rounds": [
+          {
+            "map": "Полигон",
+            "side": 0,
+            "result": "w",
+            "seconds": 11.266666666666666,
+            "hp": 66,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 16,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 84,
+              "selfDamage": 0,
+              "ricochetHits": 2,
+              "intercepts": 1,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 1,
+            "result": "w",
+            "seconds": 12.333333333333334,
+            "hp": 66,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 11,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 84,
+              "selfDamage": 0,
+              "ricochetHits": 2,
+              "intercepts": 1,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 0,
+            "result": "w",
+            "seconds": 12.2,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 18,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 3,
+              "intercepts": 1,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 1,
+            "result": "w",
+            "seconds": 12.433333333333334,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 24,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 1,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Полигон",
+            "side": 1,
+            "result": "w",
+            "seconds": 11.266666666666666,
+            "hp": 66,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 16,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 84,
+              "selfDamage": 0,
+              "ricochetHits": 2,
+              "intercepts": 2,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 0,
+            "result": "w",
+            "seconds": 15.233333333333333,
+            "hp": 66,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 16,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 84,
+              "selfDamage": 0,
+              "ricochetHits": 2,
+              "intercepts": 1,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 1,
+            "result": "w",
+            "seconds": 13.6,
+            "hp": 94,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 14,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 56,
+              "selfDamage": 0,
+              "ricochetHits": 2,
+              "intercepts": 2,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 0,
+            "result": "w",
+            "seconds": 9.133333333333333,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 18,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 1,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          }
+        ]
+      },
+      {
+        "opponent": "fast-hunter",
+        "w": 8,
+        "l": 0,
+        "d": 0,
+        "rounds": [
+          {
+            "map": "Полигон",
+            "side": 0,
+            "result": "w",
+            "seconds": 7.066666666666666,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 12,
+              "hits": 4,
+              "damageDealt": 100,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 2,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 1,
+            "result": "w",
+            "seconds": 7.3,
+            "hp": 94,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 5,
+              "hits": 4,
+              "damageDealt": 100,
+              "damageTaken": 56,
+              "selfDamage": 0,
+              "ricochetHits": 2,
+              "intercepts": 1,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 0,
+            "result": "w",
+            "seconds": 8.933333333333334,
+            "hp": 122,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 12,
+              "hits": 4,
+              "damageDealt": 100,
+              "damageTaken": 28,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 0,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 1,
+            "result": "w",
+            "seconds": 6,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 11,
+              "hits": 4,
+              "damageDealt": 100,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 2,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Полигон",
+            "side": 1,
+            "result": "w",
+            "seconds": 7.066666666666666,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 12,
+              "hits": 4,
+              "damageDealt": 100,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 2,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 0,
+            "result": "w",
+            "seconds": 6.7,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 4,
+              "hits": 2,
+              "damageDealt": 44,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 0,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 1,
+            "result": "w",
+            "seconds": 12.966666666666667,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 13,
+              "hits": 4,
+              "damageDealt": 100,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 0,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 0,
+            "result": "w",
+            "seconds": 5.333333333333333,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 10,
+              "hits": 4,
+              "damageDealt": 100,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 1,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          }
+        ]
+      },
+      {
+        "opponent": "v1-balanced",
+        "w": 6,
+        "l": 2,
+        "d": 0,
+        "rounds": [
+          {
+            "map": "Полигон",
+            "side": 0,
+            "result": "w",
+            "seconds": 12.7,
+            "hp": 10,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 22,
+              "hits": 6,
+              "damageDealt": 150,
+              "damageTaken": 140,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 5,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 1,
+            "result": "w",
+            "seconds": 26.866666666666667,
+            "hp": 88,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 21,
+              "hits": 8,
+              "damageDealt": 200,
+              "damageTaken": 112,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 1,
+              "kits": 1,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 0,
+            "result": "w",
+            "seconds": 33.43333333333333,
+            "hp": 116,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 42,
+              "hits": 6,
+              "damageDealt": 150,
+              "damageTaken": 84,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 1,
+              "kits": 1,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 1,
+            "result": "w",
+            "seconds": 38.266666666666666,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 66,
+              "hits": 6,
+              "damageDealt": 150,
+              "damageTaken": 84,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 6,
+              "kits": 2,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Полигон",
+            "side": 1,
+            "result": "w",
+            "seconds": 12.7,
+            "hp": 10,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 22,
+              "hits": 6,
+              "damageDealt": 150,
+              "damageTaken": 140,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 5,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 0,
+            "result": "l",
+            "seconds": 73.93333333333334,
+            "hp": 0,
+            "enemyHp": 20,
+            "tally": {
+              "shots": 95,
+              "hits": 9,
+              "damageDealt": 252,
+              "damageTaken": 300,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 7,
+              "kits": 3,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 1,
+            "result": "l",
+            "seconds": 44.733333333333334,
+            "hp": 0,
+            "enemyHp": 4,
+            "tally": {
+              "shots": 52,
+              "hits": 7,
+              "damageDealt": 196,
+              "damageTaken": 200,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 8,
+              "kits": 1,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 0,
+            "result": "w",
+            "seconds": 21.333333333333332,
+            "hp": 38,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 40,
+              "hits": 6,
+              "damageDealt": 150,
+              "damageTaken": 112,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 4,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          }
+        ]
+      },
+      {
+        "opponent": "v1-mobile",
+        "w": 8,
+        "l": 0,
+        "d": 0,
+        "rounds": [
+          {
+            "map": "Полигон",
+            "side": 0,
+            "result": "w",
+            "seconds": 30.433333333333334,
+            "hp": 38,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 48,
+              "hits": 5,
+              "damageDealt": 125,
+              "damageTaken": 112,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 8,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 1,
+            "result": "w",
+            "seconds": 22.133333333333333,
+            "hp": 60,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 21,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 140,
+              "selfDamage": 0,
+              "ricochetHits": 2,
+              "intercepts": 3,
+              "kits": 1,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 0,
+            "result": "w",
+            "seconds": 33.166666666666664,
+            "hp": 82,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 40,
+              "hits": 5,
+              "damageDealt": 125,
+              "damageTaken": 168,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 4,
+              "kits": 2,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 1,
+            "result": "w",
+            "seconds": 96.53333333333333,
+            "hp": 60,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 109,
+              "hits": 5,
+              "damageDealt": 125,
+              "damageTaken": 196,
+              "selfDamage": 0,
+              "ricochetHits": 2,
+              "intercepts": 10,
+              "kits": 3,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Полигон",
+            "side": 1,
+            "result": "w",
+            "seconds": 26.3,
+            "hp": 122,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 48,
+              "hits": 5,
+              "damageDealt": 125,
+              "damageTaken": 28,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 6,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 0,
+            "result": "w",
+            "seconds": 12.933333333333334,
+            "hp": 66,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 9,
+              "hits": 5,
+              "damageDealt": 125,
+              "damageTaken": 84,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 0,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 1,
+            "result": "w",
+            "seconds": 33.3,
+            "hp": 66,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 37,
+              "hits": 7,
+              "damageDealt": 175,
+              "damageTaken": 84,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 2,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 0,
+            "result": "w",
+            "seconds": 95.16666666666667,
+            "hp": 98,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 135,
+              "hits": 10,
+              "damageDealt": 275,
+              "damageTaken": 252,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 15,
+              "kits": 4,
+              "zoneDamage": 0
+            }
+          }
+        ]
+      },
+      {
+        "opponent": "v1-glass",
+        "w": 6,
+        "l": 2,
+        "d": 0,
+        "rounds": [
+          {
+            "map": "Полигон",
+            "side": 0,
+            "result": "l",
+            "seconds": 38.9,
+            "hp": 0,
+            "enemyHp": 1,
+            "tally": {
+              "shots": 64,
+              "hits": 2,
+              "damageDealt": 56,
+              "damageTaken": 150,
+              "selfDamage": 0,
+              "ricochetHits": 2,
+              "intercepts": 5,
+              "kits": 1,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 1,
+            "result": "l",
+            "seconds": 40.4,
+            "hp": 0,
+            "enemyHp": 10,
+            "tally": {
+              "shots": 27,
+              "hits": 5,
+              "damageDealt": 140,
+              "damageTaken": 236,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 2,
+              "kits": 2,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 0,
+            "result": "w",
+            "seconds": 47.833333333333336,
+            "hp": 28,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 50,
+              "hits": 6,
+              "damageDealt": 150,
+              "damageTaken": 172,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 6,
+              "kits": 1,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 1,
+            "result": "w",
+            "seconds": 14.9,
+            "hp": 107,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 28,
+              "hits": 3,
+              "damageDealt": 57,
+              "damageTaken": 43,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 6,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Полигон",
+            "side": 1,
+            "result": "w",
+            "seconds": 26.133333333333333,
+            "hp": 150,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 45,
+              "hits": 4,
+              "damageDealt": 100,
+              "damageTaken": 0,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 5,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 0,
+            "result": "w",
+            "seconds": 22.6,
+            "hp": 21,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 23,
+              "hits": 4,
+              "damageDealt": 100,
+              "damageTaken": 129,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 0,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 1,
+            "result": "w",
+            "seconds": 47.833333333333336,
+            "hp": 28,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 50,
+              "hits": 6,
+              "damageDealt": 150,
+              "damageTaken": 172,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 6,
+              "kits": 1,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 0,
+            "result": "w",
+            "seconds": 14.9,
+            "hp": 107,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 28,
+              "hits": 3,
+              "damageDealt": 57,
+              "damageTaken": 43,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 2,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          }
+        ]
+      },
+      {
+        "opponent": "v1-armored",
+        "w": 8,
+        "l": 0,
+        "d": 0,
+        "rounds": [
+          {
+            "map": "Полигон",
+            "side": 0,
+            "result": "w",
+            "seconds": 22.833333333333332,
+            "hp": 81,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 37,
+              "hits": 8,
+              "damageDealt": 200,
+              "damageTaken": 69,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 5,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 1,
+            "result": "w",
+            "seconds": 44.1,
+            "hp": 127,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 53,
+              "hits": 9,
+              "damageDealt": 250,
+              "damageTaken": 69,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 7,
+              "kits": 1,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 0,
+            "result": "w",
+            "seconds": 33.63333333333333,
+            "hp": 81,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 33,
+              "hits": 8,
+              "damageDealt": 200,
+              "damageTaken": 69,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 7,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 1,
+            "result": "w",
+            "seconds": 20.233333333333334,
+            "hp": 127,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 38,
+              "hits": 8,
+              "damageDealt": 200,
+              "damageTaken": 23,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 5,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Полигон",
+            "side": 1,
+            "result": "w",
+            "seconds": 38.166666666666664,
+            "hp": 99,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 65,
+              "hits": 8,
+              "damageDealt": 200,
+              "damageTaken": 51,
+              "selfDamage": 28,
+              "ricochetHits": 0,
+              "intercepts": 5,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Лабиринт",
+            "side": 0,
+            "result": "w",
+            "seconds": 21.8,
+            "hp": 131,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 27,
+              "hits": 8,
+              "damageDealt": 200,
+              "damageTaken": 69,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 0,
+              "kits": 1,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Крепости",
+            "side": 1,
+            "result": "w",
+            "seconds": 33.63333333333333,
+            "hp": 81,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 33,
+              "hits": 8,
+              "damageDealt": 200,
+              "damageTaken": 69,
+              "selfDamage": 0,
+              "ricochetHits": 1,
+              "intercepts": 7,
+              "kits": 0,
+              "zoneDamage": 0
+            }
+          },
+          {
+            "map": "Каньон",
+            "side": 0,
+            "result": "w",
+            "seconds": 51.1,
+            "hp": 62,
+            "enemyHp": 0,
+            "tally": {
+              "shots": 79,
+              "hits": 8,
+              "damageDealt": 200,
+              "damageTaken": 138,
+              "selfDamage": 0,
+              "ricochetHits": 0,
+              "intercepts": 10,
+              "kits": 2,
+              "zoneDamage": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

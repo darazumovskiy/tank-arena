@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="dome" cx="0.38" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#565d68"/>
+      <stop offset="1" stop-color="#1b1e23"/>
+    </radialGradient>
+    <radialGradient id="eye" cx="0.45" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.3" stop-color="#9ff6ff"/>
+      <stop offset="0.75" stop-color="#1fb6d6"/>
+      <stop offset="1" stop-color="#0b5566"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7ff0ff" stop-opacity="0.75"/>
+      <stop offset="0.45" stop-color="#33d0ec" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#33d0ec" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barrel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a505a"/>
+      <stop offset="0.5" stop-color="#2a2e35"/>
+      <stop offset="1" stop-color="#15171b"/>
+    </linearGradient>
+  </defs>
+  <!-- ствол с дульным тормозом -->
+  <rect x="38" y="29" width="19" height="6" rx="1.5" fill="url(#barrel)" stroke="#0c0d10" stroke-width="1"/>
+  <rect x="55" y="27" width="6.5" height="10" rx="1.8" fill="#e8825a" stroke="#6e2f18" stroke-width="1.1"/>
+  <path d="M58.8 27.5v9" stroke="#6e2f18" stroke-width="1"/>
+  <!-- шестигранная башня -->
+  <path d="M21.5 23 L33 19.5 L43.5 26 V38 L33 44.5 L21.5 41 Q18 32 21.5 23 Z" fill="url(#dome)" stroke="#e8825a" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- «глаз» оракула -->
+  <circle cx="35" cy="32" r="9.5" fill="url(#glow)"/>
+  <path d="M29 32 Q35 25.5 41 32 Q35 38.5 29 32 Z" fill="#0d1216" stroke="#e8825a" stroke-width="1"/>
+  <circle cx="35" cy="32" r="3.6" fill="url(#eye)"/>
+  <circle cx="34" cy="31" r="1" fill="#ffffff"/>
+  <!-- люк -->
+  <circle cx="25.5" cy="32" r="2.6" fill="#2b2f36" stroke="#e8825a" stroke-width="0.9"/>
+</svg>

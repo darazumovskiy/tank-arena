@@ -1,0 +1,55 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>arena browser test</title></head><body><pre id="out">running…</pre>
+<script type="module">
+import * as E from '/arena/engine.js';
+const q = new URLSearchParams(location.search);
+const A = q.get('a') || '/tank/bot.js', B = q.get('b') || '/arena/sparring/hunter/bot.js';
+const ROUNDS = Number(q.get('rounds') || 4);
+const LIMIT = 50;
+const out = document.getElementById('out');
+function mk(url) {
+  const w = new Worker('/lab/browser/bot-worker.js', { type: 'module' });
+  const s = { w, last: { throttle: 0, turn: 0, turretTurn: 0, fire: false }, waiting: null, times: [], late: 0, errors: [], queue: [] };
+  w.onmessage = (e) => { const m = e.data; if (s.waiting) { const r = s.waiting; s.waiting = null; r(m); } else s.queue.push(m); };
+  s.call = (msg, timeout) => new Promise((res) => {
+    if (s.queue.length) { res(s.queue.shift()); return; }
+    s.waiting = res;
+    w.postMessage(msg);
+    if (timeout) setTimeout(() => { if (s.waiting === res) { s.waiting = null; res(null); } }, timeout);
+  });
+  return s;
+}
+const bots = [mk(), mk()];
+const info = [];
+info[0] = await bots[0].call({ type: 'load', url: A });
+info[1] = await bots[1].call({ type: 'load', url: B });
+const results = [];
+for (let i = 0; i < ROUNDS; i++) {
+  const plan = E.roundPlan(i);
+  const bySide = plan.swap ? [1, 0] : [0, 1];
+  const round = E.createRound({ mapIndex: plan.mapIndex, tanks: bySide.map((k) => ({ name: info[k].name, stats: info[k].stats })) });
+  const initT = [];
+  for (let s = 0; s < 2; s++) { const r = await bots[bySide[s]].call({ type: 'init', info: { round: i, side: s, mapName: round.map.name, view: E.botView(round, s) } }); initT.push(r && r.dt); }
+  while (!round.over) {
+    const acts = await Promise.all([0, 1].map(async (s) => {
+      const b = bots[bySide[s]];
+      const t0 = performance.now();
+      const r = await b.call({ type: 'tick', state: E.botView(round, s) }, LIMIT);
+      const rt = performance.now() - t0;
+      if (!r) { b.late++; return b.last; }
+      b.times.push(r.dt);
+      if (r.err && b.errors.length < 3) b.errors.push(r.err);
+      if (r.a) b.last = r.a;
+      return r.a;
+    }));
+    E.stepRound(round, acts);
+  }
+  const wA = round.winner === null ? 'D' : bySide[round.winner] === 0 ? 'A' : 'B';
+  results.push({ map: round.map.name, winner: wA, time: +round.time.toFixed(1), initT });
+  out.textContent = JSON.stringify(results, null, 1);
+}
+const stat = (t) => { const s = [...t].sort((a, b) => a - b); return { n: s.length, avg: +(s.reduce((a, b) => a + b, 0) / s.length).toFixed(3), p99: +s[Math.floor(s.length * 0.99)].toFixed(2), max: +s[s.length - 1].toFixed(2), over20: s.filter((x) => x > 20).length, over50: s.filter((x) => x > 50).length }; };
+const summary = { ua: navigator.userAgent, results, A: { name: info[0].name, ...stat(bots[0].times), late: bots[0].late, errors: bots[0].errors, first20: bots[0].times.slice(0, 20).map((x) => +x.toFixed(1)) }, B: { name: info[1].name, ...stat(bots[1].times), late: bots[1].late, errors: bots[1].errors } };
+out.textContent = JSON.stringify(summary, null, 1);
+await fetch('/result', { method: 'POST', body: JSON.stringify(summary, null, 1) });
+</script></body></html>

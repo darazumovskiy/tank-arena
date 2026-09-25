@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6b08f"/>
+      <stop offset="0.45" stop-color="#e8825a"/>
+      <stop offset="1" stop-color="#a94f2d"/>
+    </linearGradient>
+    <linearGradient id="track" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#434954"/>
+      <stop offset="1" stop-color="#16181c"/>
+    </linearGradient>
+    <linearGradient id="deck" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d2025"/>
+      <stop offset="1" stop-color="#353a42"/>
+    </linearGradient>
+  </defs>
+  <!-- гусеницы -->
+  <rect x="4" y="5" width="56" height="13" rx="5" fill="url(#track)" stroke="#0c0d10" stroke-width="1.2"/>
+  <rect x="4" y="46" width="56" height="13" rx="5" fill="url(#track)" stroke="#0c0d10" stroke-width="1.2"/>
+  <path d="M9 6.5v10M14 6.5v10M19 6.5v10M24 6.5v10M29 6.5v10M34 6.5v10M39 6.5v10M44 6.5v10M49 6.5v10M54 6.5v10M9 47.5v10M14 47.5v10M19 47.5v10M24 47.5v10M29 47.5v10M34 47.5v10M39 47.5v10M44 47.5v10M49 47.5v10M54 47.5v10" stroke="#5c6470" stroke-width="1.8"/>
+  <!-- корпус: клин носом вправо -->
+  <path d="M9 15 H45 L58 24.5 V39.5 L45 49 H9 Q5 49 5 45 V19 Q5 15 9 15 Z" fill="url(#hull)" stroke="#6e2f18" stroke-width="1.6"/>
+  <!-- светлая грань носа -->
+  <path d="M45 16.5 L56.5 25 V39 L45 47.5 Z" fill="#ffffff" opacity="0.16"/>
+  <!-- моторный отсек с решёткой -->
+  <rect x="7.5" y="21" width="11" height="22" rx="2.5" fill="url(#deck)" stroke="#6e2f18" stroke-width="1"/>
+  <path d="M10 25h6M10 29h6M10 33h6M10 37h6M10 41h6" stroke="#e8825a" stroke-width="1.3" opacity="0.9"/>
+  <!-- броневые швы -->
+  <path d="M21 15v34M45 16v32" stroke="#8a3d20" stroke-width="1" opacity="0.7"/>
+  <!-- фары -->
+  <circle cx="55" cy="27.5" r="1.6" fill="#fff4d2" stroke="#6e2f18" stroke-width="0.6"/>
+  <circle cx="55" cy="36.5" r="1.6" fill="#fff4d2" stroke="#6e2f18" stroke-width="0.6"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>ПАРАЛЛАКС — корпус</title>
+  <defs>
+    <linearGradient id="px-hull" x1="12" y1="10" x2="49" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f1f8eb"/><stop offset=".5" stop-color="#b2d8d5"/><stop offset="1" stop-color="#587e86"/>
+    </linearGradient>
+    <linearGradient id="px-track" x1="8" y1="8" x2="54" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a131f"/><stop offset=".55" stop-color="#283b49"/><stop offset="1" stop-color="#0a131f"/>
+    </linearGradient>
+  </defs>
+  <!-- Broad split tracks and a spear-shaped prow stay legible at 64 px. -->
+  <path d="M11 6H48L57 12V20H8V11ZM8 44H57V52L48 58H11L8 53Z" fill="url(#px-track)" stroke="#030a12" stroke-width="2"/>
+  <path d="M15 8V17M22 8V17M29 8V17M36 8V17M43 8V17M50 10V17M15 47V56M22 47V56M29 47V56M36 47V56M43 47V56M50 47V54" stroke="#55707a" stroke-width="2"/>
+  <path d="M11 18H47L54 14M11 46H47L54 50" stroke="#50f5e7" stroke-width="2.5"/>
+  <path d="M5 23L14 15H43L58 25L61 32L58 39L43 49H14L5 41Z" fill="#101e2d" stroke="#030a12" stroke-width="2"/>
+  <path d="M13 22L20 17H43L54 25L58 32L54 39L43 47H20L13 42Z" fill="url(#px-hull)" stroke="#729b9e" stroke-width="1"/>
+  <path d="M42 18L48 22L43 27H22L18 23L23 18ZM23 46L18 41L22 37H43L48 42L42 46Z" fill="#e9f4e6"/>
+  <path d="M48 24L54 28L56 32L54 36L48 40L45 37V27Z" fill="#173848"/>
+  <path d="M49 27L53 32L49 37" stroke="#63ffee" stroke-width="2.5"/>
+  <path d="M7 25H15V39H7Z" fill="#07121f"/>
+  <path d="M8 27H14M8 30H14M8 33H14M8 36H14" stroke="#476472" stroke-width="1.5"/>
+  <path d="M6 23L10 20M6 41L10 44" stroke="#ff5f59" stroke-width="2.5"/>
+  <path d="M21 20H35M21 44H35" stroke="#79a5a7" stroke-width=".8"/>
+  <circle cx="32" cy="32" r="15" fill="#09212c" stroke="#4d777f"/>
+  <circle cx="32" cy="32" r="12.5" stroke="#4bded5" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <!-- Offset marks: the parallax signature. -->
+  <path d="M39 20L42 23M36 20L39 23M39 44L42 41M36 44L39 41" stroke="#102c3a" stroke-width="1.6"/>
+  <circle cx="18" cy="19" r="1" fill="#f5ffeb"/><circle cx="18" cy="45" r="1" fill="#f5ffeb"/>
+</svg>

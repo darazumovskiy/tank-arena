@@ -1,0 +1,118 @@
+{
+  "hashes": {
+    "bot.js": "6ffb7ca42af4ac0dfbb8f63c828dd1c8b80c56166972b0ef974c9ba089501505",
+    "body.svg": "a334dbc3d83e27584839376975b3fa70f03cbe9a7f3f2d14d651734f2e3be719",
+    "turret.svg": "6b8b936eb95b78e33be85d1136ef553e80d196a30db3ebc8b99608385b3212d2"
+  },
+  "checks": [
+    {
+      "map": "Полигон",
+      "round": 0,
+      "seconds": 120,
+      "hp": [
+        150,
+        150
+      ],
+      "zoneDamage": [
+        0,
+        0
+      ]
+    },
+    {
+      "map": "Лабиринт",
+      "round": 1,
+      "seconds": 120,
+      "hp": [
+        150,
+        150
+      ],
+      "zoneDamage": [
+        0,
+        0
+      ]
+    },
+    {
+      "map": "Крепости",
+      "round": 2,
+      "seconds": 120,
+      "hp": [
+        150,
+        150
+      ],
+      "zoneDamage": [
+        0,
+        0
+      ]
+    },
+    {
+      "map": "Каньон",
+      "round": 3,
+      "seconds": 120,
+      "hp": [
+        150,
+        150
+      ],
+      "zoneDamage": [
+        0,
+        0
+      ]
+    },
+    {
+      "map": "Полигон",
+      "round": 4,
+      "seconds": 120,
+      "hp": [
+        150,
+        150
+      ],
+      "zoneDamage": [
+        0,
+        0
+      ]
+    },
+    {
+      "map": "Лабиринт",
+      "round": 5,
+      "seconds": 120,
+      "hp": [
+        150,
+        150
+      ],
+      "zoneDamage": [
+        0,
+        0
+      ]
+    },
+    {
+      "map": "Крепости",
+      "round": 6,
+      "seconds": 120,
+      "hp": [
+        150,
+        150
+      ],
+      "zoneDamage": [
+        0,
+        0
+      ]
+    },
+    {
+      "map": "Каньон",
+      "round": 7,
+      "seconds": 120,
+      "hp": [
+        150,
+        150
+      ],
+      "zoneDamage": [
+        0,
+        0
+      ]
+    }
+  ],
+  "timing": {
+    "calls": 57600,
+    "p99": 1.6111000000000004,
+    "max": 48.0021999999999
+  }
+}

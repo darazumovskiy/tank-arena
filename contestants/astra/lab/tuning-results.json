@@ -1,0 +1,389 @@
+[
+  {
+    "name": "control",
+    "w": 26,
+    "l": 14,
+    "d": 0,
+    "score": 4.798666666666666,
+    "self": 112,
+    "damage": 5138,
+    "taken": 5650,
+    "zone": 198.66666666666697,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 1,
+        "l": 7,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 7,
+        "l": 1,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "exact-arrival",
+    "w": 30,
+    "l": 10,
+    "d": 0,
+    "score": 7.382666666666666,
+    "self": 112,
+    "damage": 5873,
+    "taken": 5419,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 7,
+        "l": 1,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 7,
+        "l": 1,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "short-turn",
+    "w": 28,
+    "l": 12,
+    "d": 0,
+    "score": 7.819999999999999,
+    "self": 56,
+    "damage": 5150,
+    "taken": 4634,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 5,
+        "l": 3,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 7,
+        "l": 1,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "long-turn",
+    "w": 25,
+    "l": 13,
+    "d": 2,
+    "score": 3.785333333333334,
+    "self": 140,
+    "damage": 5268,
+    "taken": 5329,
+    "zone": 281.33333333333366,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 7,
+        "l": 1,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 4,
+        "l": 2,
+        "d": 2
+      }
+    ]
+  },
+  {
+    "name": "straight-lead",
+    "w": 24,
+    "l": 16,
+    "d": 0,
+    "score": 2.2866666666666666,
+    "self": 0,
+    "damage": 4880,
+    "taken": 5589,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 1,
+        "l": 7,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 5,
+        "l": 3,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "careful",
+    "w": 21,
+    "l": 19,
+    "d": 0,
+    "score": -0.39600000000000035,
+    "self": 0,
+    "damage": 5375,
+    "taken": 6189,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 7,
+        "l": 1,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "assertive",
+    "w": 21,
+    "l": 19,
+    "d": 0,
+    "score": 3.9800000000000018,
+    "self": 0,
+    "damage": 4992,
+    "taken": 5695,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 3,
+        "l": 5,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "close-range",
+    "w": 24,
+    "l": 16,
+    "d": 0,
+    "score": 4.662666666666667,
+    "self": 84,
+    "damage": 4930,
+    "taken": 5328,
+    "zone": 198.66666666666697,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 0,
+        "l": 8,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 6,
+        "l": 2,
+        "d": 0
+      }
+    ]
+  },
+  {
+    "name": "wall-clearance",
+    "w": 30,
+    "l": 10,
+    "d": 0,
+    "score": 5.973333333333332,
+    "self": 112,
+    "damage": 5156,
+    "taken": 5532,
+    "zone": 0,
+    "pairs": [
+      {
+        "foe": "baseline",
+        "w": 4,
+        "l": 4,
+        "d": 0
+      },
+      {
+        "foe": "gunner",
+        "w": 2,
+        "l": 6,
+        "d": 0
+      },
+      {
+        "foe": "glass",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "evasive",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      },
+      {
+        "foe": "brawler",
+        "w": 8,
+        "l": 0,
+        "d": 0
+      }
+    ]
+  }
+]

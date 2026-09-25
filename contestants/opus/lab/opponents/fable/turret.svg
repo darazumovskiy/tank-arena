@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- ствол -->
+  <rect x="34" y="29.5" width="27" height="5" rx="1.5" fill="#3b4652" stroke="#1c2128" stroke-width="1.2"/>
+  <rect x="55" y="27.5" width="8" height="9" rx="2" fill="#1c2128"/>
+  <rect x="40" y="28" width="6" height="8" rx="1" fill="#2fd3ff"/>
+  <!-- башня -->
+  <circle cx="32" cy="32" r="12.5" fill="#9fb0c0" stroke="#2c3742" stroke-width="2"/>
+  <circle cx="32" cy="32" r="7" fill="#dbe4ec"/>
+  <circle cx="32" cy="32" r="3" fill="#2fd3ff"/>
+  <path d="M24 24 a11 11 0 0 0 0 16" fill="none" stroke="#4d5a68" stroke-width="2"/>
+</svg>

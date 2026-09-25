@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>ПАРАЛЛАКС — башня с коралловым глазом</title>
+  <defs>
+    <linearGradient id="px-turret" x1="20" y1="19" x2="40" y2="45" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f5faeb"/><stop offset="1" stop-color="#83b2b5"/>
+    </linearGradient>
+    <linearGradient id="px-eye" x1="26" y1="28" x2="34" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff8b5"/><stop offset=".4" stop-color="#ff785c"/><stop offset="1" stop-color="#e82852"/>
+    </linearGradient>
+  </defs>
+  <path d="M39 27H58L62 29V35L58 37H39Z" fill="#081623" stroke="#02080e" stroke-width="2"/>
+  <path d="M40 27H57L61 29H43ZM40 37H57L61 35H43Z" fill="#dcefe2"/>
+  <path d="M42 31H60V33H42Z" fill="#55fbed"/>
+  <path d="M57 28V30M57 34V36" stroke="#ff6b5c" stroke-width="2"/>
+  <!-- Deliberately asymmetric eye / counterweight; the centre of rotation is 32,32. -->
+  <path d="M18 24L27 18H36L44 25V39L36 46H27L18 40L15 32Z" fill="#071624" stroke="#02080e" stroke-width="1.8"/>
+  <path d="M19 25L28 20H35L41 25V28H23L20 32L23 36H41V39L35 44H28L19 39L17 32Z" fill="url(#px-turret)"/>
+  <path d="M29 21H35L39 25M29 43H35L39 39" stroke="#f7fff0" stroke-width="1.3"/>
+  <circle cx="29" cy="32" r="9" fill="#06131f" stroke="#46e2d7" stroke-width="1.4"/>
+  <path d="M20 32C24 23 34 24 39 32C34 40 24 41 20 32Z" fill="#28363d"/>
+  <circle cx="29" cy="32" r="5.8" fill="url(#px-eye)"/>
+  <path d="M28.5 27L31 32L28.5 37L27 32Z" fill="#280f27"/>
+  <circle cx="27" cy="29" r="1.4" fill="#ffffe5"/>
+  <path d="M20 23L17 26M20 41L17 38" stroke="#50ffea" stroke-width="1.8"/>
+  <path d="M36 29H42V35H36" stroke="#132a3b" stroke-width="2"/>
+</svg>

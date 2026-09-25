@@ -1,0 +1,51 @@
+{
+  "hashes": {
+    "bot.js": "6ffb7ca42af4ac0dfbb8f63c828dd1c8b80c56166972b0ef974c9ba089501505",
+    "body.svg": "a334dbc3d83e27584839376975b3fa70f03cbe9a7f3f2d14d651734f2e3be719",
+    "turret.svg": "6b8b936eb95b78e33be85d1136ef553e80d196a30db3ebc8b99608385b3212d2"
+  },
+  "stats": {
+    "armor": 2,
+    "engine": 1,
+    "gun": 2,
+    "reload": 5
+  },
+  "official": {
+    "hunter": [
+      16,
+      0,
+      0
+    ],
+    "dummy": [
+      8,
+      0,
+      0
+    ],
+    "mirror": [
+      4,
+      4,
+      0
+    ]
+  },
+  "expanded": {
+    "wins": 96,
+    "losses": 6,
+    "draws": 2,
+    "rounds": 104,
+    "opponents": 13
+  },
+  "zone": {
+    "rounds": 8,
+    "secondsPerRound": 120,
+    "damage": 0
+  },
+  "sequentialCliTiming": {
+    "averageMs": [
+      0.201,
+      0.25
+    ],
+    "maxMs": 4,
+    "errors": 0
+  },
+  "preview": "preview.png"
+}
