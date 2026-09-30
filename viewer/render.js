@@ -112,6 +112,13 @@ export class Renderer {
     this.offY = (this.canvas.height - VIEW_H * this.scale) / 2;
   }
 
+  // Page coordinates (e.g. a mouse event) -> arena coordinates.
+  toWorld(clientX, clientY) {
+    const px = clientX * (this.canvas.width / innerWidth);
+    const py = clientY * (this.canvas.height / innerHeight);
+    return { x: (px - this.offX) / this.scale - OX, y: (py - this.offY) / this.scale - OY };
+  }
+
   // ---------- static layers ----------
 
   floorFor(mapIndex) {
