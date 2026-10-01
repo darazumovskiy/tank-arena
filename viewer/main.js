@@ -18,6 +18,7 @@ const ui = {
   score: [0, 0],
   roundIndex: 0,
   firstTo: 4,
+  mapIndex: null, // null — карты по кругу
   countdown: null,
   banner: null,
   matchEnd: null,
@@ -72,6 +73,35 @@ async function loadBotList() {
   $('#botB').value = params.get('b') || contest[1]?.id || 'sparring/dummy';
   if (params.get('first')) $('#firstTo').value = params.get('first');
   updateHumanStats();
+}
+
+// ---------- map picker ----------
+
+function loadMapList() {
+  const sel = $('#mapSel');
+  sel.innerHTML = '';
+  const all = document.createElement('option');
+  all.value = '';
+  all.textContent = 'По кругу';
+  sel.appendChild(all);
+  E.MAPS.forEach((m, i) => {
+    const o = document.createElement('option');
+    o.value = String(i);
+    o.textContent = m.name;
+    sel.appendChild(o);
+  });
+  const want = params.get('map');
+  if (want != null) {
+    const byName = E.MAPS.findIndex((m) => m.name.toLowerCase() === want.toLowerCase());
+    const idx = byName >= 0 ? byName : Number(want);
+    if (Number.isInteger(idx) && idx >= 0 && idx < E.MAPS.length) sel.value = String(idx);
+  }
+}
+
+// Fixed map: sides still alternate every round so neither spawn gets an edge.
+function planRound(i) {
+  if (ui.mapIndex == null) return E.roundPlan(i);
+  return { mapIndex: ui.mapIndex, swap: i % 2 === 1 };
 }
 
 // ---------- human stats picker ----------
@@ -151,6 +181,7 @@ async function prepare() {
   $('#status').textContent = 'Загружаю ботов…';
   $('#status').classList.remove('error');
   ui.firstTo = Math.max(1, Math.min(9, Number($('#firstTo').value) || 4));
+  ui.mapIndex = $('#mapSel').value === '' ? null : Number($('#mapSel').value);
   const ids = [$('#botA').value, $('#botB').value];
   const entries = ids.map((id) => bots.find((b) => b.id === id)).map((b) => (b.human ? { ...b, stats: readHumanStats() } : b));
   const loaded = [];
@@ -227,7 +258,7 @@ async function runMatch(token) {
   let i = 0;
   while (Math.max(...ui.score) < ui.firstTo) {
     ui.roundIndex = i;
-    const plan = E.roundPlan(i);
+    const plan = planRound(i);
     const order = plan.swap ? [1, 0] : [0, 1];
     const round = E.createRound({ mapIndex: plan.mapIndex, tanks: order.map((ci) => ({ name: contestants[ci].name, stats: contestants[ci].stats })) });
     R.newRound(round, order, contestants);
@@ -316,12 +347,13 @@ async function runTournament(token, n) {
     draws: 0,
     stats: [emptyStats(), emptyStats()],
     byMap: E.MAPS.map(() => ({ wins: [0, 0], draws: 0 })),
+    mapIndex: ui.mapIndex,
     finished: false,
   };
   ui.tournament = T;
   ui.phase = 'tournament';
   for (let i = 0; i < n; i++) {
-    const plan = E.roundPlan(i);
+    const plan = planRound(i);
     const order = plan.swap ? [1, 0] : [0, 1];
     const round = E.createRound({ mapIndex: plan.mapIndex, tanks: order.map((ci) => ({ name: contestants[ci].name, stats: contestants[ci].stats })) });
     await initBots(round, order, i);
@@ -413,6 +445,7 @@ $('#btnFight').onclick = () => start('fight');
 $('#btnTour').onclick = () => start('tournament');
 $('#btnReload').onclick = () => loadBotList();
 
+loadMapList();
 loadBotList()
   .then(() => {
     if (params.get('auto')) start(params.get('auto'));
